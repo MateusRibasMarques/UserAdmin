@@ -1,0 +1,121 @@
+/* Login.module.css */
+.formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form {
+    --bg-light: #efefef;
+    --bg-dark: #707070;
+    --clr: #58bc82;
+    --clr-alpha: #9c9c9c60;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 300px;
+}
+
+.inputSpan {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+input[type="email"], 
+input[type="password"] {
+    border-radius: 0.5rem;
+    padding: 1rem 0.75rem;
+    width: 100%;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--clr-alpha);
+    outline: 2px solid var(--bg-dark);
+}
+
+input[type="email"]:focus, 
+input[type="password"]:focus {
+    outline: 2px solid var(--clr);
+}
+
+.label {
+    align-self: flex-start;
+    color: var(--clr);
+    font-weight: 600;
+}
+
+.submit {
+    padding: 1rem 0.75rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 3rem;
+    background-color: var(--bg-dark);
+    color: var(--bg-light);
+    border: none;
+    cursor: pointer;
+    transition: all 300ms;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.submit:hover {
+    background-color: var(--clr);
+    color: var(--bg-dark);
+}
+
+.span {
+    text-decoration: none;
+    color: var(--bg-dark);
+}
+
+.span a {
+    color: var(--clr);
+}
+
+/* From Uiverse.io by Yaya12085 */
+.radioInputs {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.5rem;
+    background-color: #EEE;
+    box-sizing: border-box;
+    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+    padding: 0.25rem;
+    width: 300px;
+    font-size: 14px;
+}
+
+.radio {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.radio input {
+    display: none;
+}
+
+.radio .name {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: none;
+    padding: .5rem 0;
+    color: rgba(51, 65, 85, 1);
+    transition: all .15s ease-in-out;
+}
+
+.radio input:checked + .name {
+    background-color: #fff;
+    font-weight: 600;
+}
